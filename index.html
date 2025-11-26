@@ -7,23 +7,94 @@
     <title>portfolio-landing</title>
 </head>
 <body>
-    <header class="header">
-    <div class="container header-inner">
-        <div class="logo">Portfolio Creator</div>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Portfolio Creator.</div>
+                
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#book" class="book-call">
+                        Book a call
+                        <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </nav>
 
-        <nav class="nav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-            <a href="#">Book a call</a>
-        </nav>
+                <button class="menu-btn">
+                    <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
 
-        <!-- Mobile Burger -->
-        <div class="burger">&#9776;</div>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <h1>
+                        <span class="hero-title-orange">I design products</span>
+                        <span class="hero-title-dark">that delight and inspire people.</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Hi! I'm Jake, a product designer based in Berlin. I create user-friendly interfaces for fast-growing startups.
+                    </p>
 
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Book a call</button>
+                        <button class="btn-secondary">
+                            Download CV
+                            <svg class="arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-image">
+                    <div class="hero-image-placeholder">
+                        <img src="./img/IMAGE.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted">
+        <div class="container">
+            <p class="trusted-text">Trusted by</p>
+            <div class="trusted-logos">
+                <div class="logo-item">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">logoipsum</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">logoipsum</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">logoipsum</span>
+                </div>
+                <div class="logo-item">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">logoipsum</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>
