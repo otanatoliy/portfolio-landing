@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ===== HEADER ===== */
+.header {
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+    
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    opacity: 0.6;
+}
+
+
+
+.burger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+/* ===== BREAKPOINTS ===== */
+
+/* Планшет */
+@media (max-width: 900px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+/* Мобилки */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 18px;
+    }
+}
